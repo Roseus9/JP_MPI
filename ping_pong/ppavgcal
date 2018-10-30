@@ -1,0 +1,11 @@
+#!/bin/bash
+grep -w 50000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 100000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 150000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 200000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 250000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 300000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 350000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 400000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 450000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
+grep 500000 pingpongplot.txt | awk '{ total += $2; count++ } END { print total/count }' >> avg.txt
