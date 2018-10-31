@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for run in {1..10}
+do
+  ./$1 $2 #$1 is 1dscript, $2 is number of cores
+done
+
+#echo "$RESULT"

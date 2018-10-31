@@ -1,0 +1,8 @@
+#!/bin/bash
+#This script is used to compile and run pingpong for multiple servers
+
+mpicc ping_pong.c -o ping_pong
+scp -r ping_pong ruitao@10.112.111.1:/home/ruitao
+mpirun -np 2 -machinefile machinefile ./ping_pong
+
+# Note: Edit machinefile, set cpu for both servers to 1
