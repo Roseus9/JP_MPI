@@ -10,5 +10,5 @@ chmod 777 Multi_cloud
 chmod 777 MPI_verif
 
 ./Multi_alice
-mpirun --hostfile hostfile -np 16 ./MPI_Multiworking
+mpirun --hostfile hostfile -np 32 ./MPI_Multiworking
 ./MPI_verifworking
