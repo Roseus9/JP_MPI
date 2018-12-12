@@ -5,4 +5,4 @@ do
   ./$1 $2 #$1 is 1dscript, $2 is number of cores
 done
 
-#echo "$RESULT"
+killall -9 mpirun
