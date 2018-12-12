@@ -13,14 +13,14 @@ int main() {
     TFheGateBootstrappingSecretKeySet* key = new_random_gate_bootstrapping_secret_keyset(params);
 
     //generate encrypt the 16 bits of 23
-    int32_t plaintext1 = 5000;
+    int32_t plaintext1 = 200;
     LweSample* ciphertext1 = new_gate_bootstrapping_ciphertext_array(32, params);
     for (int i=0; i<32; i++) {
         bootsSymEncrypt(&ciphertext1[i], (plaintext1>>i)&1, key);
     }
 
     //generate encrypt the 16 bits of 42
-    int32_t plaintext2 = 5000;
+    int32_t plaintext2 = 20;
     LweSample* ciphertext2 = new_gate_bootstrapping_ciphertext_array(32, params);
     for (int i=0; i<32; i++) {
         bootsSymEncrypt(&ciphertext2[i], (plaintext2>>i)&1, key);
