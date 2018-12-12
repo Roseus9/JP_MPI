@@ -1,5 +1,5 @@
 # JP_MPI
-MPI/openMP Code we did during our internship in Japan
+MPI/openMP Code, includes findings for homomorphic encryption from previous students
 
 Computational Fluid Dynamics 
 1) 1d Euler for a PC Cluster
