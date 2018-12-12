@@ -1,5 +1,0 @@
-#!/bin/bash
-
-mpicc 1d_Euler_mpi_test.c -o 1d_Euler_mpi_test.out
-rsync /home/hashi/euler/1d_Euler_mpi_test.out 10.112.111.18:~/euler/
-mpirun -np $1 -machinefile ~/machinefile ./1d_Euler_mpi_test.out
