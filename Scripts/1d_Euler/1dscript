@@ -1,9 +1,5 @@
 #!/bin/bash
-#This script is used to run 1d_Euler_mpi for multiple servers
 
-mpicc 1d_Euler_mpi.c -o 1d_Euler_mpi
-scp -r 1d_Euler_mpi ruitao@10.112.111.1:/home/ruitao
-mpirun -np $1 -machinefile machinefile ./1d_Euler_mpi #$1 is number of cores
-
-#To run, type ./1dscript <no. of cores>
-
+mpicc 1d_Euler_mpi_test.c -o 1d_Euler_mpi_test.out
+rsync /home/hashi/euler/1d_Euler_mpi_test.out 10.112.111.18:~/euler/
+mpirun -np $1 -machinefile ~/machinefile ./1d_Euler_mpi_test.out
